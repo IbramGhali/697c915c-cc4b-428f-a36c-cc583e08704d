@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+env/
+
+# Flask
+instance/
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Frontend
+node_modules/
+*.cache
+dist/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Environment variables
+.env
