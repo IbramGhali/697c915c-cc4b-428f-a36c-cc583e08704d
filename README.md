@@ -36,8 +36,7 @@ This project is a chatbot that can be embedded on any web page. The chatbot answ
 ### Clone the Repository
 Clone the repository created for you by Advaise Pty Ltd:
 ```bash
-git clone https://github.com/your-repo/chatbot-project.git
-cd chatbot-project
+git clone https://github.com/IbramGhali/697c915c-cc4b-428f-a36c-cc583e08704d.git
 ```
 
 ### Set Up the Backend
@@ -96,6 +95,4 @@ The Flask server should be running at `http://localhost:5000`.
 ## Contact
 For any questions or issues, please contact support@advaise.app.
 
-```
 
-This `README.md` file provides a comprehensive guide to setting up, running, and using the chatbot application. It also includes sections for known issues and future improvements, making it easy for others to understand and contribute to the project.
