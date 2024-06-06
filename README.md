@@ -1,13 +1,15 @@
 
+```markdown
 # Chatbot for DemoCo
 
-This project is a chatbot that can be embedded on any web page. The chatbot answers questions about the people working at DemoCo, a fictitious company, based on a provided knowledge base. The chatbot uses a front end built with HTML, CSS, and JavaScript, and a back end built with Python and Flask. The chatbot's Q&A functionality is powered by an open-source Language Model (LLM) from Hugging Face Transformers.
+This project is a chatbot that can be embedded on any web page. The chatbot answers questions about the people working at DemoCo, a fictitious company, based on a provided knowledge base. The chatbot uses a front end built with HTML, CSS, and JavaScript, and a back end built with Python and Flask. The chatbot's Q&A functionality is powered by Google's Generative AI model.
 
 ## Table of Contents
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
 - [How to Run](#how-to-run)
 - [Usage](#usage)
+- [Example Questions](#example-questions)
 - [Known Issues](#known-issues)
 - [Future Improvements](#future-improvements)
 - [Contact](#contact)
@@ -37,6 +39,7 @@ This project is a chatbot that can be embedded on any web page. The chatbot answ
 Clone the repository created for you by Advaise Pty Ltd:
 ```bash
 git clone https://github.com/IbramGhali/697c915c-cc4b-428f-a36c-cc583e08704d.git
+cd chatbot-project
 ```
 
 ### Set Up the Backend
@@ -79,7 +82,7 @@ The Flask server should be running at `http://localhost:5000`.
 1. Enter a question about DemoCo staff in the input field and click the "Send" button.
 2. The chatbot will display the user's question and provide a response based on the knowledge base.
 
-### Example Questions:
+## Example Questions
 - "Who are the project managers?"
 - "Find people who are diversity and inclusiveness researchers with more than 15 years of experience."
 
@@ -94,5 +97,3 @@ The Flask server should be running at `http://localhost:5000`.
 
 ## Contact
 For any questions or issues, please contact support@advaise.app.
-
-
