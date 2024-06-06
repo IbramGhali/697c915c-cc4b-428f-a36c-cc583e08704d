@@ -1,21 +1,29 @@
-/* Add your CSS styles here */
-#chat-container {
-    width: 300px;
-    margin: 0 auto;
-    padding: 10px;
-    border: 1px solid #ccc;
+body {
+    font-family: 'Roboto', sans-serif;
 }
+
 #chat-box {
-    height: 300px;
-    overflow-y: scroll;
-    border: 1px solid #ccc;
+    height: 500px;  /* Increased height */
+    overflow-y: auto;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#chat-box p {
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 4px;
     margin-bottom: 10px;
 }
-#user-input {
-    width: calc(100% - 70px);
-    padding: 5px;
+
+#chat-box p:nth-child(odd) {
+    background-color: #e1f5fe;
+    align-self: flex-start;
 }
-#send-button {
-    width: 50px;
-    padding: 5px;
+
+#chat-box p:nth-child(even) {
+    background-color: #dcedc8;
+    align-self: flex-end;
 }
