@@ -88,7 +88,7 @@ The Flask server should be running at `http://localhost:5000`.
 ### Example Questions:
 - "Who are the project managers?"
 - "Find people who are diversity and inclusiveness researchers with more than 15 years of experience."
-### Refining the Response
+## Refining the Response
 The chatbot refines its response in two steps to ensure accuracy:
 1. Initial Response Generation: The chatbot first generates a response based on the provided knowledge base and the user's question. This response includes a detailed output.
 2. Refinement Step: The initial response is then refined to extract the final answer. This is done by reprocessing the initial output to ensure it only includes the relevant answer without additional information.
