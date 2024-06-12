@@ -3,15 +3,15 @@ from flask_cors import CORS
 import google.generativeai as genai
 import time
 
-
 app = Flask(__name__)
 CORS(app)  # Enable CORS
 
-# Load a pre-trained model and tokenizer
-gemini_api_key = 'AIzaSyANnRNEWUe5gdpw2KOK6piArkOPT2MQe_Y'
+# Configure the generative AI model
+gemini_api_key = "AIzaSyANnRNEWUe5gdpw2KOK6piArkOPT2MQe_Y"
 genai.configure(api_key=gemini_api_key)
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel("gemini-pro")
 
+# Define safety settings for the model
 safety_settings = [
     {
         "category": "HARM_CATEGORY_DANGEROUS",
@@ -34,9 +34,9 @@ safety_settings = [
         "threshold": "BLOCK_NONE",
     },
 ]
-safety_settings=safety_settings
+safety_settings = safety_settings
 
-
+# Define the template for generating answers
 template = """You are given a set of data about various employees. Your role is to answer any questions based on this information and output the answer only without adding any additional information. If the information doesn't exist in the provided data you should output 'No result / Unknown' result . Below is the provided data:
 
 {
@@ -66,25 +66,32 @@ Question:
 
 """
 
+
 def get_answer(question):
-    final_temp = template + question + "\nThink step by step and then output the answers in a list."
+    final_temp = (
+        template
+        + question
+        + "\nThink step by step and then output the answers in a list."
+    )
     try:
         response = model.generate_content(final_temp)
         time.sleep(1)
-        
+        # Refine the response   
         temp2 = f"Given the output, get the final answer only in a list.\nThe output:\n{response.text}"
         feedback = model.generate_content(temp2)
-        
+
         return feedback.text.strip()
     except Exception as e:
         return f"Error: {str(e)}"
 
-@app.route('/chat', methods=['POST'])
+
+@app.route("/chat", methods=["POST"])
 def chat():
     data = request.get_json()
-    question = data['question']
+    question = data["question"]
     answer = get_answer(question)
     return jsonify({"answer": answer})
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run(debug=True)
