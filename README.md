@@ -105,7 +105,6 @@ For code optimization, an initial solution is generated, followed by feedback em
 - Scalability: This approach is versatile and can be applied to various tasks without additional training data or supervision.
 ### Reference
 [Madaan, A., et al.](https://arxiv.org/abs/2303.17651)
-Madaan, A., et al. (2023). SELF-REFINE: Iterative Refinement with Self-Feedback. arXiv:2303.17651. Retrieved from https://arxiv.org/abs/2303.17651.
 ## Known Issues
 - The model's responses are based on a simple knowledge base and may not cover all possible user queries.
 - The Flask server must be running locally; deployment to a production server is not covered in this README.
