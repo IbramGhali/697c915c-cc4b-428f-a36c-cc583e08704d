@@ -98,7 +98,8 @@ Inspired by the iterative refinement process described in the paper SELF-REFINE:
 2. Feedback Loop: The same model provides feedback on its output, highlighting areas for improvement.
 3. Refinement: The model uses this feedback to refine the output iteratively until a satisfactory result is achieved.
 ### Example
-For code optimization, an initial solution is generated, followed by feedback emphasizing efficiency improvements, such as reducing time complexity. This feedback is then used to iteratively refine the code, resulting in a more optimized solution.
+<!-- For code optimization, an initial solution is generated, followed by feedback emphasizing efficiency improvements, such as reducing time complexity. This feedback is then used to iteratively refine the code, resulting in a more optimized solution. -->
+Current large language models (LLMs) lack standardized evaluation metrics due to their inconsistent responses. Although significant research has aimed to define universal evaluation metrics on benchmarks (e.g., MMLU, Hallswag), we observed inconsistencies in LLM outputs and were unable to achieve universally consistent results. To address this, we implemented a self-refinement approach, providing feedback that improved the model's performance.
 ### Benefits
 - Increased Relevance: Outputs are more aligned with user expectations.
 - Higher Quality: Refinement leads to more polished and accurate results.
