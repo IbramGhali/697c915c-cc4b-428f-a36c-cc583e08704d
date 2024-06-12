@@ -110,9 +110,8 @@ Madaan, A., et al. (2023). SELF-REFINE: Iterative Refinement with Self-Feedback.
 - The Flask server must be running locally; deployment to a production server is not covered in this README.
 
 ## Future Improvements
-- Improve the NLP pipeline for better question understanding and response accuracy.
-- Enhance the frontend UI for a better user experience.
-- Deploy the application to a cloud platform (e.g., Heroku, AWS).
+- Explore Advanced Approaches: Investigate and implement advanced techniques and methodologies to further improve the model’s accuracy and consistency in generating responses. This includes leveraging state-of-the-art NLP models, fine-tuning with domain-specific data, and incorporating feedback loops similar to the iterative refinement process..
+- Cloud Deployment: Deploy the application to a reliable cloud platform such as Heroku or AWS to ensure scalability, reliability, and ease of access. This will also facilitate continuous integration and deployment (CI/CD) practices, enabling seamless updates and improvements.
 
 ## Contact
 For any questions or issues, please contact support@advaise.app.
